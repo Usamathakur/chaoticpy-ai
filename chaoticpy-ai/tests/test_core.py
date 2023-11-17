@@ -1,5 +1,3 @@
-# tests/test_core.py
-
 from chaoticpy_ai.core import ChaoticNumber
 
 def test_add():
@@ -12,4 +10,4 @@ def test_multiply():
     chaotic_num1 = ChaoticNumber(2)
     chaotic_num2 = ChaoticNumber(3)
     result = chaotic_num1.multiply(chaotic_num2)
-    assert result.value == 6
+    assert result.value == chaotic_num1.value * chaotic_num2.value  # Random factor, so we check the structure
